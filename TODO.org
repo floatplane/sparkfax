@@ -1,0 +1,52 @@
+* Auth/account creation
+** TODO require phone for account
+
+Mapping accounts to phone numbers means people can't create infinite accounts. This means you can give 5 free pages.
+
+** TODO auth through Cognito?
+
+* Sending faxes
+** TODO Set up Twilio number
+** TODO Microservice on AWS or GCP
+*** TODO Key generation for uploading PDF to S3
+*** TODO Send PDF from S3 to Twilio
+*** TODO Status webhook
+*** TODO Queue for handling retry if needed
+
+* Frontend website
+** TODO Account creation/login
+** TODO Create a fax
+*** TODO Enter number and other fields on cover sheet
+*** TODO Load a PDF
+*** TODO Convert other formats (DOC/DOCX, others?) to PDF in browser
+*** TODO Upload binary data to S3
+** TODO Editing in browser
+*** TODO Load PDF into canvas
+
+see Mozilla pdf.js for more about this one
+
+*** TODO Text tool
+*** TODO Ink tool
+*** TODO Store and reuse signature, initials, etc
+*** TODO Re-render canvas back to PDF
+
+* Getting found
+** TODO https://github.com/karllhughes/side-project-marketing
+
+* Getting paid
+** TODO Ability to buy faxes 
+** TODO Subscriptions
+
+* Receiving faxes
+** TODO Provision incoming number
+** TODO OCR on title page to route appropriately
+** TODO Microservice
+*** TODO Incoming fax notification
+*** TODO Get from Twilio, store in S3
+*** TODO Work queue if needed
+
+* Scaling up
+** TODO Organizations & multiple accounts
+** TODO Custom incoming number
+*** TODO 800 number
+*** TODO Porting existing number
