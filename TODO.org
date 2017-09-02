@@ -3,7 +3,7 @@
 
 Mapping accounts to phone numbers means people can't create infinite accounts. This means you can give 5 free pages.
 
-** TODO auth through Cognito?
+** TODO auth through Firebase
 
 * Sending faxes
 ** TODO Set up Twilio number
